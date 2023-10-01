@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 '''Below is the code for the command handlers'''
 
+class CommandHandlers:
+    def __init__(self):
+        self.DATA = {}
+        self.STATS = {}
 def update_stats(command, success):
     """
     Update the STATS dict with info about if executing

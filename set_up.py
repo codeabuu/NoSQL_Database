@@ -2,6 +2,7 @@
 """"importing socket module for network socket operations"""
 import socket
 from command_parser import parse_message
+from commands_h import CommandHandlers
 
 """Define constants for the host and port to be used"""
 HOST = "localhost"
