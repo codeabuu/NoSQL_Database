@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """"importing socket module for network socket operations"""
 import socket
+from command_parser import parse_message
 
 """Define constants for the host and port to be used"""
 HOST = "localhost"
