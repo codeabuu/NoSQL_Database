@@ -71,4 +71,10 @@ def handle_append(key, value):
         return (True, 'Key [{}] had value [{}] appended'.format(key, value))
 
 def handle_delete(key):
+    if key not in DATA:
+        return (False, 'ERROR: Key [{}] not found and could not be deleted'.format(key))
+    else:
+        del DATA[key]
 
+def handle_stats():
+    return (True, str(STATS))
