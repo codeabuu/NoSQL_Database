@@ -5,7 +5,7 @@ from command_parser import parse_message
 from commands_h import CommandHandlers
 
 """Define constants for the host and port to be used"""
-HOST = "localhost"
+HOST = ""
 PORT = 50505 # Changed to an integer
 
 '''Create a socket object using IPv4 and TCP protocol'''

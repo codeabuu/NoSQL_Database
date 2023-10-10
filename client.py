@@ -13,9 +13,7 @@ def send_request(command, key, value=None):
     client_socket.connect((SERVER_HOST, SERVER_PORT))
 
     # Construct the message in the format: "command;key;value"
-    message = f"{command};{key}"
-    if value is not None:
-        message += f";{value}"
+    message = f"{command};{key};{value}"
 
     # Send the message to the server
     client_socket.sendall(message.encode())

@@ -2,7 +2,7 @@
 
 def parse_message(data):
     """Return a tuple containing the command, the key, and (optionally) the value cast to the appropriate type."""
-    command, key, value, value_type = data.strip().slit(';')
+    command, key, value, value_type = data.strip().split(';')
     if value_type:
         if value_type == 'LIST':
             value = value.split(';')
